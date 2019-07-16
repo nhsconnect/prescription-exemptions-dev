@@ -35,8 +35,8 @@ The following vocabulary must be used in EPS claim messages.
 | `0013`	| is entitled to, or named on a VALID NHS tax credit exemption certificate	 |
 | `0015` | Patient does not need to pay the prescription charge	| This allows the exemption status to be recorded without actually stating the reason for the exemption.|
 | `0016` | gets Universal Credit (and meets eligibility criteria)
-| `9005`	| has a valid maternity exemption certificate - confirmed by source	 | |
-| Any other value | Patient does not need to pay the prescription charge - confirmed by source	| This allows the exemption status to be confirmed without actually stating the reason for the exemption |
+| `9005`	| has a valid maternity exemption certificate - confirmed by RTEC source	 | For this exemption code, the maternity exemption type must also be displayed to the end user. |
+| Any other value | Patient does not need to pay the prescription charge - confirmed by RTEC source	| This allows the exemption status to be confirmed without actually stating the reason for the exemption. E.G '9999' |
 
 
 ## Exemption Type in the EPS Claim message ##
@@ -49,7 +49,7 @@ Exemption type is included in the *Dispense Claim Information interaction (PORX_
   <seperatableInd value="false" />
   <coveringChargeExempt classCode="OBS" moodCode="EVN" negationInd="false">
     <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="EX" />
-    <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" code="9005" />
+    <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" code="9999" />
   </coveringChargeExempt>
 </coverage>
 ```
@@ -298,7 +298,7 @@ Content-Transfer-Encoding: 8bit
           <seperatableInd value="false" />
           <coveringChargeExempt classCode="OBS" moodCode="EVN" negationInd="false">
             <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="EX" />
-            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" code="9005" />
+            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" code="9999" />
           </coveringChargeExempt>
         </coverage>
         <sequelTo typeCode="SEQL">
