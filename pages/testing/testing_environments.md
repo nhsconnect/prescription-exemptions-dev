@@ -11,21 +11,14 @@ summary: "Details of what environments are available to support the technical ac
 
 The Real Time Exemption Checking service utilises the following environments. As the service is cloud hosted IP addresses may change and so are not provided.
 
-### Spine Integration (INT) / NHSBSA Staging ###
+### NHSBSA Staging Environment ###
 
 To support the technical accreditation of integrating systems.
 
 | Host                                        | Port  | Endpoint                          |
 | --------------------------------------------| ----- | --------------------------------- |
-| stg.nhsdapi.assured.nhsbsa.nhs.uk           | 443   | /rtec-api-gateway/search   |
+| stg.assured.nhsbsa.nhs.uk            | 443   | /rtec-api-gateway/search   |
 
-### Mock ###
-
-To support the initial development.
-
-| Host                                        | Port  | Endpoint                          |
-| --------------------------------------------| ----- | --------------------------------- |
-| rtec-mock.eps.digital.nhs.uk                | 443   | /rtec-api-gateway/search   |
 
 ### Production (LIVE) ###
 
