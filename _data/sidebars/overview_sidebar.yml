@@ -1,7 +1,7 @@
 entries:
 - title: Real Time Exemption Checking Service
   product: Real Time Exemption Checking Service API<br/>
-  version: v1.0.0
+  version: v1.1.0
   levels: one
   folders:
 
@@ -12,7 +12,9 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-
+    - title: Version History
+      url: /version.html
+      output: web
   - title: Develop
     output: web
     folderitems:
