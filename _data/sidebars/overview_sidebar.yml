@@ -12,8 +12,8 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: Version History
-      url: /version.html
+    - title: Release notes
+      url: /release_notes.html
       output: web
   - title: Develop
     output: web
