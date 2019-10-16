@@ -1,3 +1,6 @@
 .sass-cache/
 _site/
 
+/.vs/slnx.sqlite
+/.vs/prescription-exemptions-dev/v16/.suo
+/.vs/VSWorkspaceState.json
