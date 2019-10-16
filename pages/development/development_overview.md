@@ -13,9 +13,9 @@ summary: "Overview for developers on how to integrate with the Real Time Exempti
 
 Integrating systems must meet the client requirements listed below:
 
-* [Real Time Exemption Checking Service - Client Functional Requirements](downloads/development/Real Time Exemption Checking Service - Client Functional Requirements v1.1.pdf)
+* [Real Time Exemption Checking Service - Client Functional Requirements v1.2](downloads/development/Real Time Exemption Checking Service - Client Functional Requirements v1.2.pdf)
 
-* [Real Time Exemption Checking Service - Client Non Functional Requirements](downloads/development/Real Time Exemption Checking Service - Client Non-Functional Requirements v1.0.pdf)
+* [Real Time Exemption Checking Service - Client Non Functional Requirements v1.0](downloads/development/Real Time Exemption Checking Service - Client Non-Functional Requirements v1.0.pdf)
 
 ### Requests ###
 All requests are HTTP POSTs of a json object with the following properties:
@@ -25,8 +25,10 @@ All requests are HTTP POSTs of a json object with the following properties:
 |	`dob`				|	**Date of Birth** of the patient				|	Date				| 2010-01-01										|
 |	`nhsNumber`	| **NHS Number** which must be traced and verified with Spine Demographics | String	| 9434765919 |
 |	`postcode`	|	**Post Code** of patient's usual address	|	String			|	NE32JH													|
+|`forename` |  **Forename** from the patient's usual name | String | Peter |
 |	`surname`|	**Family Name** from patient's usual name	|	String			|	Parker													|
-|`prescriptionId` | EPS R2 **Prescription ID** from the prescription | String | 471BC8-P83027-34B75X
+|`prescriptionId` | EPS R2 **Prescription ID** from the prescription | String | 471BC8-P83027-34B75X |
+
 
 ### Response ###
 The json response will contain a simple object with the following properties. Note that these properties are not ordered so may appear in any order.
