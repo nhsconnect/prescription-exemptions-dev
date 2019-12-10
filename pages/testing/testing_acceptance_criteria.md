@@ -8,13 +8,12 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 ---
 
 [authentication.feature](_includes/authentication.feature)
-<pre><code>
-{{ {% include authentication.feature %}| xml_escape}}
-</code>
-</pre>
+```
+{% include authentication.feature %
+```
+
 [claim.feature](_includes/claim.feature)
-<pre><code>
+```
 {% include claim.feature %}
-</code>
-</pre>
+```
 
