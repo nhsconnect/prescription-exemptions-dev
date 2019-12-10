@@ -8,4 +8,4 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 ---
 
 [authentication.feature](downloads/testing/acceptance_criteria/authentication.feature)
-{% include_relative  downloads/testing/acceptance_criteria/authentication.feature %}
+{% include  authentication.feature %}
