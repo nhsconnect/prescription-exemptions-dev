@@ -8,4 +8,4 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 ---
 
 [authentication.feature](downloads/testing/acceptance_criteria/authentication.feature)
-{% raw %}{% gist authentication.feature %}{% endraw %}
+{% include_relative  downloads/testing/acceptance_criteria/authentication.feature %}
