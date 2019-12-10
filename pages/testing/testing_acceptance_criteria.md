@@ -9,7 +9,7 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 
 [authentication.feature](_includes/authentication.feature)
 ```
-{% include authentication.feature %
+{% include authentication.feature %}
 ```
 
 [claim.feature](_includes/claim.feature)
