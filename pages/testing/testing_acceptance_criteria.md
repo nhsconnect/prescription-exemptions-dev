@@ -7,12 +7,14 @@ permalink: testing_acceptance_criteria.html
 summary: "Details of acceptance criteria to be used for assuring client implementations"
 ---
 
-[authentication.feature](downloads/testing/acceptance_criteria/authentication.feature)
+[authentication.feature](_includes/authentication.feature)
 <pre><code>
 {% include authentication.feature %}
 </code>
 </pre>
+[claim.feature](_includes/claim.feature)
+<pre><code>
+{% include claim.feature %}
+</code>
+</pre>
 
-{% highlight ruby linenos %}
-{% include authentication.feature %}
-{% end highlight %}
