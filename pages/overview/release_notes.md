@@ -6,7 +6,7 @@ sidebar: overview_sidebar
 permalink: release_notes.html
 summary: "Description of changes between versions"
 ---
-## Version 1.1.1.##
+## Version 1.1.1 ##
 The following changes have been made
  - Client Functional Requirements updated to v1.3
  - Client RTM updated to v1.2
