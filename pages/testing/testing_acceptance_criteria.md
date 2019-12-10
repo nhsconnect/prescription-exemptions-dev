@@ -8,12 +8,12 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 ---
 
 [authentication.feature](_includes/authentication.feature)
-```
+```cucumber
 {% include authentication.feature %}
 ```
 
 [claim.feature](_includes/claim.feature)
-```
+```cucumber
 {% include claim.feature %}
 ```
 
