@@ -9,5 +9,10 @@ summary: "Details of acceptance criteria to be used for assuring client implemen
 
 [authentication.feature](downloads/testing/acceptance_criteria/authentication.feature)
 <pre><code>
-{% include  authentication.feature %}</code>
+{% include authentication.feature %}
+</code>
 </pre>
+
+{% highlight ruby linenos %}
+{% include authentication.feature %}
+{% end highlight %}
