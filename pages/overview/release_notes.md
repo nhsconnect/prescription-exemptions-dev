@@ -10,8 +10,10 @@ summary: "Description of changes between versions"
 The following changes have been made
  - Client Functional Requirements updated to v1.3
  - Client RTM updated to v1.2
- - Acceptance criteria updated for PEC-FR22
+ - Acceptance criteria updated for PEC-FR 22
+
 No changes have been made to the API specification
+
 ## Version 1.1.0 ##
 The following changes have been made
  - Client Functional Requirements updated to v1.2
