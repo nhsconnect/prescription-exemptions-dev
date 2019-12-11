@@ -53,7 +53,7 @@ Scenario: Prescription containing a mixture of CC and FS prescriber endorsed ite
 	I would like to not carry out a prescription exemption check for patients who have automatic exemption
 	So that the dispensing process is faster
 	Given that I have a prescription for a patient aged between 16 and 60
-	And the prescription contains a mixture of CC and FS endorsed items
+	And the prescription contains a mixture of CC and FS endorsed items only
 	When I request to carry out an exemption check
 	Then the system will prevent a check being made
 
