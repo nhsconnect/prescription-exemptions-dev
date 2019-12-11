@@ -25,14 +25,14 @@ Scenario: universal credit declared by patient
 	
 	
 @PEC-FR-50
-Scenario: SH prescriber endorsement
+Scenario: All items have FS prescriber endorsement
 	As the NHSBSA
 	I want the patient's exemption to be accurately reported
 	So that I can report the correct number of exemptions claimed to the health service
 	Given that I have a prescription to dispense
-	And the prescribed item has the prescriber endorsement 'SH'
+	And all the prescribed item has the prescriber endorsement 'FS'
 	When I submit a claim message
-	Then The exemption type code is '0010'
+	Then The exemption type code is '0017'
 	And the description is 'was prescribed free-of-charge sexual health medication'
 	
 @PEC-FR-52

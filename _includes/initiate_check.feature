@@ -28,25 +28,65 @@ Scenario: Patient a prisoner on release
 	Then the system will prevent a check being made
 	
 @PEC-FR-22
-Scenario: Contraceptive items
+Scenario: Prescription where all items have CC prescriber Endorsement
 	As a Dispenser at a Healthcare Organisation
-	I would like to not carry out a prescripiton exemption check for patients who have automatic exemption
+	I would like to not carry out a prescription exemption check for patients who have automatic exemption
 	So that the dispensing process is faster
 	Given that I have a prescription for a patient aged between 16 and 60
-	And the prescription is for a contraceptive item
-	When  I request to carry out an exemption check
+	And the prescription is endorsed CC by the prescriber
+	When I request to carry out an exemption check
 	Then the system will prevent a check being made
-	
+
 @PEC-FR-22
-Scenario: SH endorsement 
+Scenario: Prescription where all items have FS prescriber Endorsement
 	As a Dispenser at a Healthcare Organisation
-	I would like to not carry out a prescripiton exemption check for patients who have automatic exemption
+	I would like to not carry out a prescription exemption check for patients who have automatic exemption
 	So that the dispensing process is faster
 	Given that I have a prescription for a patient aged between 16 and 60
-	And the prescription is for an item with the SH endorsement
-	When  I request to carry out an exemption check
+	And the prescription is endorsed FS by the prescriber
+	When I request to carry out an exemption check
 	Then the system will prevent a check being made
-	
+
+@PEC-FR-22
+Scenario: Prescription containing a mixture of CC and FS prescriber endorsed items only 
+	As a Dispenser at a Healthcare Organisation
+	I would like to not carry out a prescription exemption check for patients who have automatic exemption
+	So that the dispensing process is faster
+	Given that I have a prescription for a patient aged between 16 and 60
+	And the prescription contains a mixture of CC and FS endorsed items only
+	When I request to carry out an exemption check
+	Then the system will prevent a check being made
+
+@PEC-FR-22
+Scenario: Prescription contains CC prescriber endorsed item and other non-endorsed item(s)
+	As a Dispenser at a Healthcare Organisation
+	I would like to carry out a prescription exemption check as part of my dispensing workflow
+	So that the dispensing process is faster
+	Given that I have a prescription for a patient aged between 16 and 60
+	And the prescription contains CC prescriber endorsed items and other non-endorsed item(s)
+	When I request to carry out an exemption check
+	Then the system will carry out an exemption check.
+
+@PEC-FR-22
+Scenario: Prescription contains FS prescriber endorsed item and other non-endorsed item(s)
+	As a Dispenser at a Healthcare Organisation
+	I would like to carry out a prescription exemption check as part of my dispensing workflow
+	So that the dispensing process is faster
+	Given that I have a prescription for a patient aged between 16 and 60
+	And the prescription contains FS prescriber endorsed items and other non-endorsed item(s)
+	When I request to carry out an exemption check
+	Then the system will carry out an exemption check.
+
+@PEC-FR-22
+Scenario: Prescription contains FS prescriber endorsed item, CC prescriber endorsed item and other non-endorsed item(s)
+	As a Dispenser at a Healthcare Organisation
+	I would like to carry out a prescription exemption check as part of my dispensing workflow
+	So that the dispensing process is faster
+	Given that I have a prescription for a patient aged between 16 and 60
+	And the prescription contains FS and CC prescriber endorsed items and other non-endorsed item(s)
+	When I request to carry out an exemption check
+	Then the system will carry out an exemption check.
+
 @PEC-FR-23 @PEC-FR-25
 Scenario: Automatic checking as part of dispensing process
 	As a Dispenser at a Healthcare Organisation
