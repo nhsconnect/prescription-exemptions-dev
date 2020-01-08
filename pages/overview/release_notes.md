@@ -15,7 +15,7 @@ The following changes have been made
 * Updated claim.feature to remove reference to @PEC-FR-50
 * Updated demographics.feature to simplyfy deceased requirement
 * Updated initiate_check.feature to clarify prisoner on release requirement
-* Clarified that aud value on JWT payload is an example and not the 'fixed' value
+* Clarified that aud value on JWT payload is an example and not the fixed value
 
 ## Version 1.1.1 ##
 The following changes have been made
