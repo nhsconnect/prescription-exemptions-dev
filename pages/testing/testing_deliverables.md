@@ -12,7 +12,7 @@ Evidence to demonstrate meeting these requirements is approved by NHS Digital So
 
   * [Requirement Traceability Matrix (XLS) v1.3](downloads/development/Real Time Exemption Checking Service - Client RTM v1.3.xlsx)
 
-## Test Evidence - Functional Requirements##
+## Test Evidence - Functional Requirements ##
 
 There are a set of acceptance criteria which should permit automated testing of the integration.  Evidence of successful test shall be provided to demonstrate compliance.
 

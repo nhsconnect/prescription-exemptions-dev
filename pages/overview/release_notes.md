@@ -12,7 +12,7 @@ The following changes have been made
 * Client RTM updated to v1.3
 * Removed HTTP 401 error response from Error Handling
 * Removed non RTEC Exemption codes from Integrating with Prescirption Messaging
-* Updated claim.feature to remove reference to @PEC-FR-50
+* Updated claim.feature to remove reference to PEC-FR-50
 * Updated demographics.feature to simplyfy deceased requirement
 * Updated initiate_check.feature to clarify prisoner on release requirement
 * Clarified that aud value on JWT payload is an example and not the fixed value
