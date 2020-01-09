@@ -9,14 +9,15 @@ summary: How to integrate information from the Real Time Exemption Checking Serv
 
 Once an exemption has been confirmed by a prescription exemption check this confirmation needs to be reflected in the reimbursement claim message for EPS prescriptions. This is done using an extended version of the  *PrescriptionChargeExemption* vocabulary, which includes values which may be returned by a prescription exemption check. Where the patient wishes to claim a different exemption not confirmed by the prescription exemption checking service, then the appropriate value not confirmed by source must be included in the claim message.
 
-## RTEC EPS Values
+## RTEC EPS Values ##
 
 The following vocabulary must be used in EPS claim messages.
 
 | Value	| Description	| Note  |
 | ----- | ----------- | ------|
-| `9005`	| has a valid maternity exemption certificate - confirmed by RTEC source	 | This is a future proof requirement to ensure systems can display the exemption type if this was provided by the NHSBSA in the RTEC response. |
+|`9005`| has a valid maternity exemption certificate - confirmed by RTEC source | This is a future proof requirement to ensure systems can display the exemption type if this was provided by the NHSBSA in the RTEC response. |
 | Any other 9xxx value receieved by BSA in an RTEC confirmed response | Patient does not need to pay the prescription charge - confirmed by RTEC source	| This allows the exemption status to be confirmed without actually stating the reason for the exemption. E.G '9999' |
+
 
 ## Exemption Type in the EPS Claim message ##
 
