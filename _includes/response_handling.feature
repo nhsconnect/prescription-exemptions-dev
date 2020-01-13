@@ -79,21 +79,21 @@ Scenario: Logging check in audit log
 
 @PEC-FR-36
 Scenario: Exemption found, user cannot override RTEC response
-		As a Dispenser at a HealthCare Organisation
-        I would like to be made aware that a prescription exemption applies 
-        So that the prescription medication can be dispensed at the appropriate charge
-        Given that I have a prescription to dispense
-        And the patient has an exemption recorded in the exemption checking service
-        When I request an exemption check and it is confirmed by the service 
-        Then the system will prevent the user from overriding the exemption 
+	As a Dispenser at a HealthCare Organisation
+	I would like to be made aware that a prescription exemption applies 
+	So that the prescription medication can be dispensed at the appropriate charge
+	Given that I have a prescription to dispense
+	And the patient has an exemption recorded in the exemption checking service
+	When I request an exemption check and it is confirmed by the service 
+	Then the system will prevent the user from overriding the exemption 
 
 @PEC-FR-43 
 Scenario: Exemption found, no evidence or decleration required
-		As a Dispenser at a HealthCare Organisation
-        I would like to be made aware that a prescription exemption applies and that further evidence is not required
-        So that the prescription medication can be dispensed at the appropriate charge
-        Given that I have a prescription to dispense
-        And the patient has an exemption recorded in the exemption checking service
-        When I request a prescription exemption check and it is confirmed by the service
-        Then the system should inform the user that a decleration or further evidence is not required
+	As a Dispenser at a HealthCare Organisation
+	I would like to be made aware that a prescription exemption applies and that further evidence is not required
+	So that the prescription medication can be dispensed at the appropriate charge
+	Given that I have a prescription to dispense
+	And the patient has an exemption recorded in the exemption checking service
+	When I request a prescription exemption check and it is confirmed by the service
+	Then the system should inform the user that a decleration or further evidence is not required
 
