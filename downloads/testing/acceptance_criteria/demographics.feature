@@ -45,7 +45,7 @@ Scenario: Deceased patients not able to be checked
 	I would like to be able to carry out a prescription exemption check
 	So that the prescription medication can be dispensed with at the appropriate 
 	Given that the Dispenser would like to carry out an exemption check
-	And the Patient is recorded as informally deceased
+	And the Patient is recorded as deceased
 	When the dispenser requests to carry out an exemption check
 	Then the system will prevent the a request being made 
 	

@@ -7,7 +7,7 @@ permalink: integrating_messaging.html
 summary: How to integrate information from the Real Time Exemption Checking Service API with EPS Prescription messaging
 ---
 
-Once an exemption has been confirmed by a prescription exemption check this confirmation needs to be reflected in the reimbursement claim message for EPS prescriptions. This is done using an extended version of the  *PrescriptionChargeExemption* vocabulary, which includes values which may be returned by a prescription exemption check. Where the patient wishes to claim a different exemption not confirmed by the prescription exemption checking service, then the appropriate value not confirmed by source must be included in the claim message.
+The existing EPS claim message is to be used when submitting reimbursement messages with exemptions confirmed by the Real Time Exemption Checking service. In order to differentiate patient exemptions confirmed by the service, additional EPS values must be used for indicating patient prescription charge exemption. Information on the values used within the Real Time Exemption Checking service can be found below. Where the patient wishes to claim a different exemption not confirmed by the service, suppliers should utilise existing exemption values as part of the EPS process. Information on existing EPS values can be found within the NHSBSA `Requirements and Guidance for Endorsement in EPS`: https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/prescribing-and-dispensing/endorsement-guidance
 
 ## RTEC EPS Values ##
 
